@@ -1,56 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
+/*============ GOOGLE FONTS =========== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
-* {
-  box-sizing: border-box;
+/*============ Variables CSS ========== */
+:root {
+    /*=========== Colors ============= */
+    --first-color: #4D49BF;
+    --second-color: #05DBF2;
+    --body-color: #DFE9F2;
+    --title-color: #1C1C22;
+    --text-color: #58576B;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Montserrat', sans-serif;
+    --normal-font-size: 1.5rem;
+    --h1-font-size: 2rem;
+    --h3-font-size: 1.125rem;
+    --small-font-size: .75rem;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  background-color: #ccc3db;
-  color: #3e3e41;
+@media screen and (min-width: 968px) {
+    :root {
+        --normal-font-size: 1rem;
+        --h1-font-size: 2rem;
+        --h3-font-size: 1.25rem;
+        --small-font-size: .813rem;
+    }
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 40px;
-  color: #222224;
-}
+/*========== BASE ==========*/
+*,::before,::after{
+    box-sizing: border-box;
+  }
 
-button,
-.btn {
-  cursor: pointer;
-  font: inherit;
-  padding: 0.5rem 1.5rem;
-  background-color: #350490;
-  border: 1px solid #350490;
-  color: white;
-  border-radius: 4px;
-  text-decoration: none;
-}
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+  }
 
-button:hover,
-.btn:hover {
-  background-color: #230161;
-  border-color: #230161;
-}
+  h1{
+      font-size: var(--h1-font-size);
+      color: var(--text-color);
+  }
 
-#main-header {
-    width: 100%;
-    text-align: center;
-    padding: 2rem 0;
-}
+  h2{
+      font-size: var(--normal-font-size);
+      color: var(--second-color);
+  }
 
-#main-header h1 {
-    font-size: 1.5rem;
-}
+  p{
+      font-size: var(--h3-font-size);
+      color: var(--text-color);
+  }
 
-#main-logo {
-    font-size: 3rem;
-    font-family: 'Roboto Slab', sans-serif;
+  a{
     text-decoration: none;
-    color: #350490;
-    font-weight: bold;
+  }
+
+/*============== Header =============*/
+#main-logo{
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    text-align: center;
 }

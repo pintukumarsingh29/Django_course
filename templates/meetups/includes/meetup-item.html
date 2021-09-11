@@ -1,16 +1,17 @@
-<li class="meetup-item">
-                    <article>
-                        <div class="meetup-summary">
-                            <div class="meetup-image">
-                                <img src="" alt="">
+<div class="card__glass">
+                    <img src="" alt="" class="card__img">
+                        <div class="card__data">
+                                <h3 class="card__title">{{ title }}</h3>
+                                <span class="card__profession">{{ location }}</span>
                             </div>
-                            <div class="meetup-details">
-                                <h3>{{ title }}</h3>
-                                <address>{{ location }}</address>
-                            </div>
-                        </div>
-                        <div class="meetup-actions">
+
+                    <div class="card__button">
                             <a href="{% url 'meetup-detail' meetup_item.slug %}" class="btn">More Details</a>
-                        </div>
-                    </article>
-                </li>
+                    </div>
+
+                <div class="card__social">
+                    <a href="#" class="card__link"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="card__link"><i class='bx bxl-twitter'></i></a>
+                </div>
+</div>

@@ -14,7 +14,12 @@ def index(request):
             'title': 'A Second Meetup',
             'location': 'Paris',
             'slug': 'a-second-meetup'
-         }
+         },
+        {
+            'title': 'A Third Meetup',
+            'location': 'London',
+            'slug': 'a-third-meetup'
+        }
     ]
     return render(request, 'meetups/index.html', {
         'show_meetups': True,

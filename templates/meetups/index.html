@@ -19,6 +19,9 @@
 
 {% block body %}
     <section class="card">
+        <div class="card__circle card__circle1"></div>
+        <div class="card__circle card__circle2"></div>
+
         <div class="card__container bd-container">
                 {% for meetup_item in meetups %}
                     {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title location=meetup_item.location %}

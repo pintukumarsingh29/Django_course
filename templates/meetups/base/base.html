@@ -12,13 +12,16 @@
     {% block site_css %}{% endblock %}
 </head>
 <body>
+
 <header id="main-header">
     <nav><a href="/meetups" id="main-logo">Django Meetups</a></nav>
-    <h1>{% block main_heading %}{% endblock %}</h1>
+    <h1 class="main_heading">{% block main_heading %}{% endblock %}</h1>
     {% block header_content %}{% endblock %}
 </header>
+
 <main>
     {% block body %}{% endblock %}
 </main>
+
 </body>
 </html>

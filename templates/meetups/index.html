@@ -24,7 +24,7 @@
 
         <div class="card__container bd-container">
                 {% for meetup_item in meetups %}
-                    {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title location=meetup_item.location %}
+                    {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title location='New York' slug=meetups_items.slug %}
                 {% endfor %}
         </div>
     </section>
